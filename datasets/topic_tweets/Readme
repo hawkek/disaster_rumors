@@ -1,5 +1,5 @@
 This folder will contain CSV files for each topic included in our final data set.
-There will be 224 files, which will be produced after running the code in https://github.com/hawkek/disaster_rumors/tree/main/code/data_preparation_step1_credbank_compilation.ipynb
+There will be 224 files, which will be produced after running the code in https://github.com/hawkek/disaster_rumors/tree/main/code/data_preparation_credbank_part1.ipynb
 Each file will contain tweets belonging to each topic, described by the attributes "tweet_id", "user_id", "create_time", "topic_key", and "is_credible".
 There will be 13,799,503 tweets represented in these CSV files, which need to be combined, and then you can use their IDs to extract the text content using Twitter's API.
-See https://github.com/hawkek/disaster_rumors/tree/main/code/data_preparation_step2_accessing_Twitters_API.ipynb
+See https://github.com/hawkek/disaster_rumors/tree/main/code/data_preparation_credbank_part2.ipynb
