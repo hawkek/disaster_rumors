@@ -23,12 +23,10 @@ Credibility:
 | [CREDBANK](https://github.com/compsocial/CREDBANK-data#readme) | Streaming tweets collected between mid Oct 2014 and end of Feb 2015: topics are classified as events or non events, events annotated with credibility ratings | Model Training |
 
 ## Files
-* Executive Summary:
-* Report: 
-* Web Scraping code:
-* Disaster Modeling code:
-* Rumor Modeling:
-* Web app:
+* Executive Summary: https://github.com/hawkek/disaster_rumors/blob/main/executive_summary_disaster_tweets.pdf
+* Report: https://github.com/hawkek/disaster_rumors/blob/main/detecting_rumors_in_disaster_tweets_report.pdf
+* Code: https://github.com/hawkek/disaster_rumors/tree/main/code
+* Web app: https://github.com/hawkek/disaster_rumors/tree/main/webapp
 
 
 ## Results
