@@ -20,8 +20,7 @@ Relevancy:
 Credibility:
 | Name     | Description                                                                                                                                                   | Use            |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| CREDBANK | Streaming tweets collected between mid Oct 2014 and end of Feb 2015: topics are classified as events or non events, events annotated with credibility ratings | Model Training |
-
+| [CREDBANK](https://github.com/compsocial/CREDBANK-data#readme) | Streaming tweets collected between mid Oct 2014 and end of Feb 2015: topics are classified as events or non events, events annotated with credibility ratings | Model Training |
 
 ## Files
 * Executive Summary:
@@ -55,5 +54,23 @@ Credibility:
 | Convolutional Neural Network | 0.983             | 0.982               |
 
 ## Conclusion
+The results of our analysis are largely consistent with Hunt, Agarwal & Puneet (2020). Each of our ML models achieves a high degree of accuracy when classifying disaster-related tweets as rumors or non-rumours, but only when evaluating tweets relating to events that are represented in training data. When we attempt to generalize our model. applying it to tweets relating to an unseen event, it shows poor performance with an accuracy similar to our baseline. There are several reasons why this may be the case, not the least of which is data quality. Even simple image labeling can be expensive and time-consuming, but credibility data needs to be labeled as true or false, which can require fact-checking and sometimes domain knowledge. Humans are also subject to biases and interpretation, which can result in incorrect or imprecise data labels.
 
-## Future Improvements
+That said, the issues with the CREDBANK leave the question open, as it is possible that a similar dataset that is rigorously cleaned and vetted could perform well. Moreover, a robust dataset that is specifically about disaster tweets could also have potential as a training set for ML algorithms. For future research into verification of disaster tweets we’d recommend one of the following approaches:
+* Use a purpose-built dataset comprised of disaster-related tweets that are manually labelled as rumour or not-rumour.
+* Use a broader feature set that includes textual and non-textual features in evaluating the veracity of disaster-tweets.
+* Select a web app host that can support a neural net.
+* Explore if transformers could perform better.
+
+## References
+
+C. Buntain and J. Golbeck, "Automatically Identifying Fake News in Popular Twitter Threads," 2017 IEEE International Conference on Smart Cloud (SmartCloud), 2017, pp. 208-215, doi: 10.1109/SmartCloud.2017.40.
+
+Han S., Gao, J., Ciravegna, F. (2019). "Neural Language Model Based Training Data Augmentation for Weakly Supervised Early Rumor Detection", The 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2019), Vancouver, Canada, 27-30 August, 2019
+
+Mitra, T., & Gilbert, E. (2021). CREDBANK: A Large-Scale Social Media Corpus With Associated Credibility Annotations. Proceedings of the International AAAI Conference on Web and Social Media, 9(1), 258-267. Retrieved from https://ojs.aaai.org/index.php/ICWSM/article/view/14625
+
+Murayama, T., Wakamiya, S., Aramaki, E., & Kobayashi, R. (2021). Modeling the spread of fake news on Twitter. PLOS ONE, 16(4). https://doi.org/10.1371/journal.pone.0250419
+Sharma, K., Qian, F., Jiang, H., Ruchansky, N., Zhang, M., & Liu, Y. (2019). Combating fake news. ACM Transactions on Intelligent Systems and Technology, 10(3), 1–42. https://doi.org/10.1145/3305260
+
+Shu K, Mahudeswaran D, Wang S, Lee D, Liu H (2020) FakeNewsNet: a data repository with news content, social context, and spatiotemporal information for studying fake news on social media. Big Data 8:3, 171–188, DOI: 10.1089/big.2020.0062. 
